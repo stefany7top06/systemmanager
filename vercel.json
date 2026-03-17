@@ -25,6 +25,14 @@
       "dest": "https://mail.systemmanager.com.br/passoapassodigital/"
     },
     {
+      "src": "/vacationhub/(.*)",
+      "dest": "https://mail.systemmanager.com.br/vacationhub/$1"
+    },
+    {
+      "src": "/vacationhub",
+      "dest": "https://mail.systemmanager.com.br/vacationhub/"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
