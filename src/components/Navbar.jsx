@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const links = [
-  { id: 'services', label: 'Servicos' },
+  { id: 'services', label: 'Serviços' },
   { id: 'skills', label: 'Skills' },
   { id: 'cases', label: 'Cases' },
   { id: 'contato', label: 'Contato' },

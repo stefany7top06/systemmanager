@@ -2,19 +2,19 @@ import { motion } from 'framer-motion'
 
 const cases = [
   {
-    title: 'Plataforma de Operacao Logistica',
+    title: 'Plataforma de Operação Logística',
     challenge: 'Equipe sofria com planilhas e retrabalho operacional.',
-    result: 'Reducao de 42% no tempo de processamento e visibilidade total da operacao.',
+    result: 'Redução de 42% no tempo de processamento e visibilidade total da operação.',
   },
   {
-    title: 'Dashboard Comercial com Integracao ERP',
-    challenge: 'Dados de vendas fragmentados em multiplos sistemas.',
-    result: 'Unificacao de dados e tomada de decisao diaria baseada em KPI real.',
+    title: 'Dashboard Comercial com Integração ERP',
+    challenge: 'Dados de vendas fragmentados em múltiplos sistemas.',
+    result: 'Unificação de dados e tomada de decisão diária baseada em KPI real.',
   },
   {
-    title: 'Automacao com IA para Atendimento',
+    title: 'Automação com IA para Atendimento',
     challenge: 'Alto volume de demandas repetitivas no suporte.',
-    result: 'Triagem inteligente e ganho de produtividade com respostas mais rapidas.',
+    result: 'Triagem inteligente e ganho de produtividade com respostas mais rápidas.',
   },
 ]
 
@@ -32,7 +32,7 @@ export default function CasesSection() {
           <span className="pill">Cases e clientes</span>
           <h2 className="section-title">Projetos que geram impacto no mundo real</h2>
           <p className="section-copy">
-            Empresas de logistica, saude, varejo e servicos confiam na System Manager para digitalizar operacoes.
+            Empresas de logística, saúde, varejo e serviços confiam na System Manager para digitalizar operações.
           </p>
         </motion.div>
 

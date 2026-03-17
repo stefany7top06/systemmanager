@@ -5,32 +5,32 @@ const services = [
   {
     icon: Globe2,
     title: 'Landing Pages e Sites',
-    description: 'Paginas de alta conversao com performance, SEO e visual premium para posicionar sua marca.',
+    description: 'Páginas de alta conversão com performance, SEO e visual premium para posicionar sua marca.',
   },
   {
     icon: LayoutDashboard,
     title: 'Dashboards e Sistemas',
-    description: 'Solucoes web sob medida para operacao, gestao e acompanhamento de KPIs em tempo real.',
+    description: 'Soluções web sob medida para operação, gestão e acompanhamento de KPIs em tempo real.',
   },
   {
     icon: Database,
     title: 'Banco de Dados e Arquitetura',
-    description: 'Modelagem, otimizacao e governanca de dados para suportar crescimento com seguranca.',
+    description: 'Modelagem, otimização e governança de dados para suportar crescimento com segurança.',
   },
   {
     icon: Network,
-    title: 'Integracoes e APIs',
+    title: 'Integrações e APIs',
     description: 'Integramos ERPs, CRMs e plataformas externas com APIs resilientes e observabilidade.',
   },
   {
     icon: Workflow,
-    title: 'Automacao de Processos',
-    description: 'Fluxos inteligentes para reduzir retrabalho, acelerar operacao e eliminar gargalos.',
+    title: 'Automação de Processos',
+    description: 'Fluxos inteligentes para reduzir retrabalho, acelerar operação e eliminar gargalos.',
   },
   {
     icon: Sparkles,
-    title: 'IA Aplicada ao Negocio',
-    description: 'Assistentes, classificacao inteligente e analises para gerar vantagem competitiva.',
+    title: 'IA Aplicada ao Negócio',
+    description: 'Assistentes, classificação inteligente e análises para gerar vantagem competitiva.',
   },
 ]
 
@@ -45,10 +45,10 @@ export default function ServicesSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <span className="pill">Servicos</span>
+          <span className="pill">Serviços</span>
           <h2 className="section-title">Tudo que sua empresa precisa para digitalizar e escalar</h2>
           <p className="section-copy">
-            Entregamos de ponta a ponta: estrategia, design, desenvolvimento, dados, IA e manutencao evolutiva.
+            Entregamos de ponta a ponta: estratégia, design, desenvolvimento, dados, IA e manutenção evolutiva.
           </p>
         </motion.div>
 

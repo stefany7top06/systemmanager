@@ -40,11 +40,11 @@ export default function HeroSection() {
           </div>
 
           <h1 className="font-heading text-white text-4xl sm:text-5xl lg:text-7xl leading-[1.02] tracking-tight">
-            Construimos sistemas web que <span className="text-gradient"><TypingAnimation /></span>
+            Construímos sistemas web que <span className="text-gradient"><TypingAnimation /></span>
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-white/75 max-w-2xl leading-relaxed">
-            Da landing page ao dashboard corporativo, da arquitetura de banco de dados a automacoes com IA: entregamos software completo, robusto e pronto para crescer com sua empresa.
+            Da landing page ao dashboard corporativo, da arquitetura de banco de dados a automações com IA: entregamos software completo, robusto e pronto para crescer com sua empresa.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -66,7 +66,7 @@ export default function HeroSection() {
           <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl">
             {[
               ['50+', 'Projetos entregues'],
-              ['99.9%', 'Uptime em operacao'],
+              ['99.9%', 'Uptime em operação'],
               ['24/7', 'Monitoramento'],
               ['Full Stack', 'Web, dados e IA'],
             ].map(([value, label]) => (
@@ -79,7 +79,7 @@ export default function HeroSection() {
 
           <p className="mt-6 text-xs sm:text-sm text-white/50 flex items-center gap-2">
             <Bot size={14} className="text-violet-300" />
-            AI-ready stack com foco em performance, seguranca e resultado de negocio
+            AI-ready stack com foco em performance, segurança e resultado de negócio
           </p>
         </motion.div>
       </div>

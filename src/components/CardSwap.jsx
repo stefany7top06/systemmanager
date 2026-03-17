@@ -209,7 +209,7 @@ export default function CardSwap({
               cardElementsRef.current[index] = node
             }}
             className="skill-swap-card absolute top-1/2 left-1/2 p-6 sm:p-7 cursor-pointer overflow-hidden rounded-xl [transform-style:preserve-3d] [will-change:transform] [backface-visibility:hidden]"
-            title="Clique para avancar"
+            title="Clique para avançar"
             onClick={() => {
               clickSwapRef.current(index)
               onCardClick?.(index)

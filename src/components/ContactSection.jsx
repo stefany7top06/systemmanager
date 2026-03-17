@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, Mail, MessageCircle } from 'lucide-react'
 
-const whatsappUrl = 'https://wa.me/5519989113165?text=Ola%20System%20Manager,%20quero%20uma%20proposta%20para%20meu%20projeto.'
+const whatsappUrl = 'https://wa.me/5519989113165?text=Ol%C3%A1%20System%20Manager,%20quero%20uma%20proposta%20para%20meu%20projeto.'
 
 export default function ContactSection() {
   return (
@@ -15,9 +15,9 @@ export default function ContactSection() {
           className="glass-panel p-7 sm:p-10"
         >
           <span className="pill">Vamos conversar</span>
-          <h2 className="section-title text-left mt-5">Fale com a System Manager e acelere seu proximo projeto</h2>
+          <h2 className="section-title text-left mt-5">Fale com a System Manager e acelere seu próximo projeto</h2>
           <p className="section-copy text-left max-w-2xl mx-0">
-            Envie sua necessidade e retornamos com estrategia, escopo e proposta tecnica personalizada.
+            Envie sua necessidade e retornamos com estratégia, escopo e proposta técnica personalizada.
           </p>
 
           <div className="mt-8 grid sm:grid-cols-2 gap-3">

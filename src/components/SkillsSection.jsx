@@ -16,8 +16,8 @@ const skillGroups = [
     items: ['PostgreSQL', 'MySQL', 'Redis', 'Docker', 'CI/CD'],
   },
   {
-    title: 'Inteligencia Artificial',
-    items: ['LLM Integrations', 'RAG', 'Automacao IA', 'Agentes', 'Analytics'],
+    title: 'Inteligência Artificial',
+    items: ['LLM Integrations', 'RAG', 'Automação IA', 'Agentes', 'Analytics'],
   },
 ]
 
@@ -35,7 +35,7 @@ export default function SkillsSection() {
           <span className="pill">Skills e Stack</span>
           <h2 className="section-title">Tecnologia moderna aplicada ao seu contexto real</h2>
           <p className="section-copy">
-            Combinamos arquitetura, produto e execucao para construir software confiavel e facil de evoluir.
+            Combinamos arquitetura, produto e execução para construir software confiável e fácil de evoluir.
           </p>
         </motion.div>
 
@@ -68,7 +68,7 @@ export default function SkillsSection() {
             className="mt-6 flex flex-col items-center gap-4 text-center"
           >
             <p className="max-w-md text-sm text-white/55">
-              Clique em qualquer card e revele a proxima camada da nossa stack.
+              Clique em qualquer card e revele a próxima camada da nossa stack.
             </p>
 
             <motion.div
