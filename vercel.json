@@ -1,17 +1,21 @@
 {
-  "routes": [
+  "redirects": [
     {
-      "src": "/(.*)",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "www.systemmanager.com.br"
         }
       ],
-      "status": 308,
-      "headers": {
-        "Location": "https://systemmanager.com.br/$1"
-      }
+      "destination": "https://systemmanager.com.br/$1",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
