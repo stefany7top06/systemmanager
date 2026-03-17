@@ -8,7 +8,9 @@ const makeSlot = (index, distX, distY, total) => ({
   zIndex: total - index,
 })
 
-const placeNow = (el, slot, skew) => {
+const alphaForSlot = (slotIndex) => Math.max(0.58, 1 - slotIndex * 0.12)
+
+const placeNow = (el, slot, skew, slotIndex) => {
   gsap.set(el, {
     x: slot.x,
     y: slot.y,
@@ -18,6 +20,7 @@ const placeNow = (el, slot, skew) => {
     skewY: skew,
     transformOrigin: 'center center',
     zIndex: slot.zIndex,
+    autoAlpha: alphaForSlot(slotIndex),
     force3D: true,
   })
 }
@@ -72,7 +75,7 @@ export default function CardSwap({
       order.current.forEach((cardIndex, slotIndex) => {
         const el = cardElementsRef.current[cardIndex]
         if (!el) return
-        placeNow(el, makeSlot(slotIndex, cardDistance, verticalDistance, total), skewAmount)
+        placeNow(el, makeSlot(slotIndex, cardDistance, verticalDistance, total), skewAmount, slotIndex)
       })
     }
 
@@ -107,6 +110,7 @@ export default function CardSwap({
             x: slot.x,
             y: slot.y,
             z: slot.z,
+            autoAlpha: alphaForSlot(promotedIndex),
             duration: config.durMove,
             ease: config.ease,
           },
@@ -130,6 +134,7 @@ export default function CardSwap({
           x: backSlot.x,
           y: backSlot.y,
           z: backSlot.z,
+          autoAlpha: alphaForSlot(total - 1),
           duration: config.durReturn,
           ease: config.ease,
         },
@@ -203,7 +208,7 @@ export default function CardSwap({
             ref={(node) => {
               cardElementsRef.current[index] = node
             }}
-            className="absolute top-1/2 left-1/2 glass-panel p-6 sm:p-7 cursor-pointer overflow-hidden rounded-xl border border-white/15 bg-black/35 shadow-xl [transform-style:preserve-3d] [will-change:transform] [backface-visibility:hidden]"
+            className="skill-swap-card absolute top-1/2 left-1/2 p-6 sm:p-7 cursor-pointer overflow-hidden rounded-xl [transform-style:preserve-3d] [will-change:transform] [backface-visibility:hidden]"
             title="Clique para avancar"
             onClick={() => {
               clickSwapRef.current(index)
@@ -211,13 +216,13 @@ export default function CardSwap({
             }}
           >
             <div className="relative h-full flex flex-col">
-              <div className="absolute -top-16 -right-12 w-40 h-40 rounded-full bg-violet-400/20 blur-3xl pointer-events-none" />
-              <h3 className="text-white font-heading text-2xl sm:text-3xl mb-5 relative z-10">{card.title}</h3>
+              <div className="absolute -top-16 -right-12 w-40 h-40 rounded-full bg-violet-400/10 blur-3xl pointer-events-none" />
+              <h3 className="skill-swap-title font-heading text-2xl sm:text-3xl mb-5 relative z-10">{card.title}</h3>
               <div className="flex flex-wrap gap-2.5 relative z-10">
                 {card.items.map((item) => (
                   <span
                     key={item}
-                    className="inline-flex px-3 py-1.5 rounded-full border border-white/15 bg-white/10 text-white/85 text-sm"
+                    className="skill-swap-chip inline-flex px-3 py-1.5 rounded-full text-sm"
                   >
                     {item}
                   </span>
