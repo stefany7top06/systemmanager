@@ -1,21 +1,32 @@
 {
-  "redirects": [
+  "routes": [
     {
-      "source": "/(.*)",
+      "src": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "www.systemmanager.com.br"
         }
       ],
-      "destination": "https://systemmanager.com.br/$1",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
+      "status": 308,
+      "headers": {
+        "Location": "https://systemmanager.com.br/$1"
+      }
+    },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "handle": "filesystem"
+    },
+    {
+      "src": "/passoapassodigital/(.*)",
+      "dest": "https://mail.systemmanager.com.br/passoapassodigital/$1"
+    },
+    {
+      "src": "/passoapassodigital",
+      "dest": "https://mail.systemmanager.com.br/passoapassodigital/"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
