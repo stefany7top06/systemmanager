@@ -2,19 +2,24 @@ import { motion } from 'framer-motion'
 
 const cases = [
   {
-    title: 'Plataforma de Operação Logística',
-    challenge: 'Equipe sofria com planilhas e retrabalho operacional.',
-    result: 'Redução de 42% no tempo de processamento e visibilidade total da operação.',
+    title: 'Gestão de Reservas para Apartamentos',
+    challenge:
+      'A empresa gerenciava reservas, finanças, clientes e limpeza dos apartamentos em calendários físicos e controles dispersos, com alto risco de falhas e retrabalho.',
+    result:
+      'Criamos um dashboard central com uma área específica para cada apartamento e páginas dedicadas para cada dor operacional (reservas, finanças, limpeza e clientes), trazendo organização, rastreabilidade e decisões mais rápidas no dia a dia.',
   },
   {
-    title: 'Dashboard Comercial com Integração ERP',
-    challenge: 'Dados de vendas fragmentados em múltiplos sistemas.',
-    result: 'Unificação de dados e tomada de decisão diária baseada em KPI real.',
+    title: 'Organização Operacional para Escritório de Contabilidade',
+    challenge:
+      'O escritório tinha dificuldade para acompanhar obrigações mensais, status do que já havia sido feito, obrigações particulares por cliente, inadimplência e clientes sem movimento.',
+    result:
+      'Entregamos um sistema com painel de obrigações por cliente, status de execução, alertas de vencimento, controle de inadimplência e acompanhamento de clientes sem movimento, aumentando previsibilidade e controle da operação contábil.',
   },
   {
-    title: 'Automação com IA para Atendimento',
-    challenge: 'Alto volume de demandas repetitivas no suporte.',
-    result: 'Triagem inteligente e ganho de produtividade com respostas mais rápidas.',
+    title: 'Sistema de Livro Caixa e Relatórios Gerenciais',
+    challenge: 'A empresa precisava organizar o livro caixa com movimentações, despesas e receitas em um único fluxo confiável.',
+    result:
+      'Desenvolvemos um sistema completo com saldo de transporte, saldo a transportar, relatório mensal, relatório anual, gráficos e impressão, consolidando a gestão financeira com mais clareza e segurança.',
   },
 ]
 
